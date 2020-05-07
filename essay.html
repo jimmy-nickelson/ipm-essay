@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Esai</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <style>
+      .jumbotron{
+        background-position: center;
+        background-size: cover;
+        background-image: url('img/city.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+
+  </head>
+  <body onload="initViz()">
+    <nav id="navbar" class="navbar sticky-top navbar-expand-md navbar-dark bg-dark"><div class="container">
+      <a href="index.html" class="navbar-brand text-muted">IPM-essay</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-stretch" id="navbar6">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="essay.html">Esai</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Tentang</a>
+          </li>
+        </ul>
+      </div>
+    </div></nav>
+
+    <main>
+    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
+      <div class="container">
+        <h1 class="display-4"><span class="text-info">I</span>ndeks <span class="text-info">P</span>embangunan <span class="text-info">M</span>anusia</h1>
+        <p class="lead"><b>Dalam analisis dan teori dengan bentuk visualisasi data dan esai.</b></p>
+      </div>
+    </div>
+    
+    <div class="headline">
+      <div class="headline-fade">
+
+        <div class="isi container" style="margin-top: 0;">
+          <h2>Apa IPM?</h2>
+          <p>
+            Pembangunan manusia merupakan isu yang sangat penting. Kualitas sumber daya
+            manusia yang baik merupakan modal dasar pembangunan suatu negara. Dengan SDM yang
+            berkualitas perekonomian suatu negara dapat berkembang secara optimal dan mampu bersaing
+            dengan negara-negara lain di tingkat global. Oleh karena itu, untuk mengetahui pembangunan
+            manusia di suatu negara dilakukan penghitungan <span class="text-info">Indeks Pembangunan Manusia (IPM)</span>.
+          </p>
+          <p>
+            Menurut UNDP, <span class="text-info">Indeks Pembangunan Manusia (IPM)</span> mengukur capaian pembangunan
+            manusia berbasis sejumlah komponen dasar kualitas hidup. Sebagai ukuran kualitas hidup, IPM
+            dibangun melalui pendekatan tiga dimensi dasar, yaitu umur panjang dan hidup sehat,
+            pengetahuan, serta standar hidup layak.
+          </p>
+          <p>Adapun masing-masing dimensi tersebut dapat dijelaskan oleh indikator seperti tertulis dalam daftar berikut:</p>
+          <div id="4komp"></div>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header bg-secondary text-white" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
+                <h6 class="mb-0">
+                    Dimensi kesehatan
+                </h6>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <span class="text-info">Umur harapan hidup (UHH)</span> saat lahir merupakan indikator yang mewakili <span class="text-info">dimensi kesehatan</span> dalam penghitungan IPM. UHH merupakan indikator yang mencerminkan derajat kesehatan masyarakat pada suatu wilayah, baik dari sarana prasarana, akses, maupun kualitas kesehatan. Secara tidak langsung, peningkatan UHH menunjukkan derajat kesehatan masyarakat yang semakin baik dalam semua aspek kesehatan. 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header bg-secondary text-white" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
+                <h6 class="mb-0">
+                    Dimensi pengetahuan
+                </h6>
+              </div>
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <span class="text-info">Angka Harapan Lama Sekolah (HLS)</span> dan <span class="text-info">Rata-Rata Lama Sekolah (RLS)</span> merupakan indikator yang mewakili <span class="text-info">dimensi  pengetahuan</span> dalam penghitungan IPM. Rata-rata lama sekolah menggambarkan indikator output pembangunan jangka panjang, sedangkan harapan lama sekolah menggambarkan keberhasilan program-program pendidikan jangka pendek. Cakupan dalam menghitung HLS adalah pendidikan penduduk dari usia 7 tahun ke atas, sementara cakupan penduduk untuk menghitung RLS yaitu dari usia 25 tahun ke atas.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header bg-secondary text-white" id="headingThree" data-toggle="collapse" data-target="#collapseThree">
+                <h6 class="mb-0">
+                    Dimensi standar hidup layak
+                </h6>
+              </div>
+              <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <span class="text-info">Dimensi standar hidup layak</span> merupakan representasi dari kesejahteraan yang diwakili oleh indikator pengeluaran per kapita (PPP) yang disesuaikan. Dimensi ini menjadi salah satu kunci penting dalam membangun kualitas kehidupan manusia. Pengeluaran telah memberikan sedikit gambaran mengenai ukuran pembangunan sehingga pengeluaran per kapita dijadikan salah satu indikator IPM.
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div id="4kelp"></div>
+          <h2>Klasifikasi IPM</h2>
+          <p>
+            Capaian pembangunan manusia di suatu wilayah pada waktu tertentu dapat
+            dikelompokkan ke dalam empat kelompok. Pengelompokkan ini bertujuan untuk
+            mengorganisasikan wilayah-wilayah menjadi kelompok-kelompok yang sama dalam dalam hal
+            pembangunan manusia.
+            <div class="container col-md-5">
+              <ul class="list-group">
+                <li class="list-group-item kelp4">Kelompok <span class="lispan">“sangat tinggi”</span> : IPM ≥ 80</li>
+                <li class="list-group-item kelp4">Kelompok <span class="lispan">“tinggi”</span> : 70 ≤ IPM &lt; 80</li>
+                <li class="list-group-item kelp4">Kelompok <span class="lispan">“sedang”</span> : 60 ≤ IPM &lt; 70</li>
+                <li class="list-group-item kelp4">Kelompok <span class="lispan">“rendah”</span> : IPM &lt; 60</li>
+              </ul>
+              <ul>
+              </ul>
+
+            </div>
+          </p>
+        
+        </div> <!--isi container-->
+      </div>
+    </div> <!--headline-->
+
+    <div id="snackbar"></div>
+    <hr class="my-4" style="border: 1px solid darkgray; opacity: 0.5; width: 90%;">
+    <p class="container text-center">
+      <button class="btn btn-primary btn-lg btn-outline-dark" onclick="show()" id="collapse">
+        Klik untuk mulai
+      </button>
+    </p>
+    <div id="pemisah" style="padding:20px"></div>
+      
+
+    <div class="row bg-dark" id="tombol">
+      <div class="col-sm-6">
+        <button class="btn btn-secondary btn-block" onclick="prevbtn()">&lt; Sebelumnya</button>
+      </div>
+      <div class="col-sm-6">
+        <button class="btn btn-info btn-block" id="next" onclick="nextbtn()">Selanjutnya &gt; </button>
+      </div>
+    </div>
+
+    <div id="click-content">
+
+      <div class="row">  
+        <!-- Grafik 1-->
+        <div class="container col-md-6 grafik">
+          <div id="viz1"></div>
+        </div>
+
+        <div class="col-md-6 text">
+          <!--1-->
+          <!-- Text -->
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <h5 class="card-title">Perkembangan IPM Indonesia tahun 2010-2019</h5>
+              <p class="card-text">Angka IPM nasional menunjukkan perkembangan yang positif dari tahun ke tahun. Dimulai dari tahun 2010, IPM Indonesia menginjak angka 66,53 dan terus meningkat hingga mencapai angka 71,92 pada tahun 2019. Peningkatan level ini menggambarkan bahwa pembangunan manusia di Indonesia semakin baik.
+                </p>      
+            </div>
+          </div>
+
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <p class="card-text"> Status pembangunan manusia berdasarkan capaian IPM diklasifikasikan menjadi empat kelompok seperti disebutkan <a href="#4kelp">di atas</a>. Berdasarkan klasifikasi tersebut, maka status pembangunan manusia di Indonesia berada pada level <span class="text-info">“Sedang”</span> dari tahun 2010 hingga 2015.</p>      
+            </div>
+          </div>
+
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <p class="card-text">Mulai tahun 2016, status pembangunan manusia di Indonesia naik ke level <span class="text-info">“Tinggi”</span> dengan angka IPM sebesar 70,18 dan terus bertahan di level ini hingga 2019 (dengan angka 71,92). Hal ini menandakan bahwa Indonesia telah berstatus tinggi dalam pencapaian pembangunan manusia.</p>      
+            </div>
+          </div>
+
+          <!--2-->
+          <!-- Text -->
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <h5 class="card-title">Jika perkembangan IPM dilihat per komponen</h5>
+              <h6 class="card-subtitle mb-2 text-muted">HLS dan RLS</h6>
+              <p class="card-text">Selama Periode 2010 hingga 2019, indikator HLS dan RLS terus menunjukkan peningkatan. Pada tahun 2010, angka HLS (hijau) menginjak 11,29 dan terus mengalami peningkatan yang konsisten hingga tahun 2019 dengan angka HLS mencapai 12,95. Hal yang sama terjadi pada angka RLS (kuning). Pada tahun 2010, angka RLS menginjak 7,46 dan terus mengalami peningkatan yang konsisten hingga tahun 2019 dengan angka RLS mencapai 8,34. Hal ini menandakan bahwa terjadi peningkatan sumber daya manusia yang berkualitas di Indonesia.</p>      
+            </div>
+          </div>
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Pengeluaran per Kapita</h6>
+              <p class="card-text">Grafik warna merah menggambarkan perkembangan angka PPP di Indonesia. Perkembangan PPP terus mengalami peningkatan yang konsisten dari tahun ke tahun. Pada tahun 2010 pengeluaran per kapita penduduk mencapai Rp 9.437.000 rupiah per tahun, dan pada tahun 2019 pengeluaran per kapita telah mencapai Rp 11.299.000 rupiah per tahun. Hal ini menunjukkan bahwa terus membaiknya kesejahteraan penduduk di Indonesia.</p>      
+            </div>
+          </div>
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Umur Harapan Hidup</h6>
+              <p class="card-text">
+                Grafik warna biru menggambarkan perkembangan UHH bayi di Indonesia pada saat lahir. Seperti 3 indikator sebelumnya, angka UHH juga terus mengalami peningkatan yang konsisten dari tahun ke tahun. Pada tahun 2010, angka UHH menginjak 69.81 dan terus mengalami peningkatan yang konsisten hingga tahun 2019 dengan angka UHH mencapai 71.34. Hal ini menandakan bahwa bayi yang baru lahir memiliki harapan untuk hidup semakin lama.
+                </p>      
+            </div>
+          </div>
+          
+          <!--3-->
+          <!-- Text -->
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <h5 class="card-title">Diagram Batang IPM Menurut Provinsi Tahun 2019</h5>
+              <p class="card-text">Pada tahun 2019, IPM Indonesia sebesar 71.92 dengan capaian IPM tertinggi ditempati oleh Provinsi DKI Jakarta dengan IPM sebesar 80.76, sedangkan IPM terendah ditempati oleh Provinsi Papua dengan IPM sebesar 60.84.
+                </p>      
+            </div>
+          </div>
+
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <p class="card-text">Provinsi DKI Jakarta tercatat sebagai provinsi yang status pembangunan manusia <span class="text-info">“sangat tinggi”</span>. Sebagai ibukota negara, Provinsi DKI Jakarta merupakan pusat dari seluruh kegiatan, baik pendidikan, perekonomian, bisnis, dan lain-lain. Hal ini mendukung Provinsi DKI Jakarta dalam pencapaian pembangunan manusia. Sarana dan prasarana Provinsi DKI Jakarta cukup lengkap dan memadai. Akses untuk mendapatkan pendidikan maupun kesehatan pun mudah. Selain itu, sebagai provinsi dengan banyak pusat kegiatan, secara tidak langsung menjadikan Provinsi DKI Jakarta menarik bagi sumber daya manusia dengan pendidikan tinggi.
+                </p>      
+            </div>
+          </div>
+
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <p class="card-text">Kondisi sebaliknya dialami oleh Provinsi Papua, ketersediaan sarana prasarana pendidikan dan kesehatan di Provinsi Papua relatif kurang lengkap dan akses untuk mencapainya juga relatif kurang. Hal ini terkait dengan kondisi geografis Papua yang masih sulit sehingga berdampak terhadap akses masyarakat pada sarana kesehatan pendidikan, dan ekonomi. Sehingga Provinsi Papua tercatat dengan nilai IPM terendah di Indonesia meskipun status pembangunan manusianya sudah tergolong <span class="text-info">“sedang”</span>.
+                </p>      
+            </div>
+          </div>
+
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <p class="card-text">Sementara itu tercatat dua puluh dua provinsi dengan status pembangunan manusia <span class="text-info">“tinggi”</span> yaitu Provinsi DI Yogyakarta, Kalimantan Timur, Kepulauan Riau, Bali, Riau, Sulawesi Utara, Banten, Sumatera Barat, Jawa Barat, Aceh, Sumatera Utara, Jawa Tengah, Sulawesi Selatan, Jawa Timur, Kepulauan Bangka Belitung, Jambi, Bengkulu, Sulawesi Tenggara, Kalimantan Utara, Kalimantan Tengah, Kalimantan Selatan, dan Sumatera Selatan.</p>      
+            </div>
+          </div>
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <p class="card-text">Dan sebelas provinsi dengan status pembangunan manusia <span class="text-info">“sedang”</span> yaitu Provinsi Lampung, Sulawesi Tengah, Maluku, Maluku Utara, Gorontalo, Nusa Tenggara Barat, Kalimantan Barat, dan Sulawesi Barat, Nusa Tenggara Timur, Papua Barat dan Papua, serta tidak ada provinsi yang berstatus <span class="text-info">“rendah”</span>.
+              </p>      
+            </div>
+          </div>
+
+        </div> <!--end col-md text-->
+      </div> <!-- end row -->
+
+      <!-- 4 -->
+      <!-- Grafik -->
+      <div class="row">
+        <div class="container col-md-6 grafik">
+          <div id="viz2"></div>
+        </div>
+        
+        <!-- 5 -->
+        <!-- Text -->
+        <div class="col-md-6 text">
+
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <h5 class="card-title">Komponen Harapan Lama Sekolah 2019</h5>
+              <p class="card-text">Harapan lama sekolah merupakan salah satu indikator yang mewakili dimensi pendidikan dalam perhitungan IPM. Pada tahun 2019, harapan lama sekolah tertinggi berada di Provinsi DI Yogyakarta dengan capaian sebesar 15,58 tahun, sedangkan terendah berada di Provinsi Papua dengan capaian sebesar 11,05 tahun.</p>
+            </div>
+          </div>
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <h5 class="card-title">Komponen Rata-rata Lama Sekolah 2019</h5>
+              <p class="card-text">Indikator lain yang mewakili dimensi pendidikan dalam penghitungan IPM adalah rata-rata lama sekolah. Capaian rata-rata lama sekolah tertinggi pada tahun 2019 masih diraih oleh provinsi DKI Jakarta dengan rata-rata lama sekolah sebesar 11,06 tahun. DKI Jakarta merupakan pusat pemerintahan, pusat perekonomian, dan pusat kegiatan lainnya yang memberikan magnet tersendiri bagi penduduk sehingga ibukota negara menjadi tempat yang menarik bagi penduduk dengan pendidikan tinggi. Oleh karena itu, cukup wajar apabila rata-rata lama sekolah di Provinsi DKI Jakarta menjadi yang tertinggi. Sementara itu, Papua menjadi provinsi dengan capaian rata-rata lama sekolah terendah pada tahun 2019. Dengan rata-rata lama sekolah sebesar 6,65 tahun</p>      
+            </div>
+          </div>
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <h5 class="card-title">Komponen Pengeluaran per Kapita yang Disesuaikan 2019</h5>
+              <p class="card-text">Pada dimensi standar hidup layak, terjadi variasi pengeluaran per kapita yang cukup besar. Pengeluaran per kapita paling tinggi tercatat berada di Provinsi DKI Jakarta. Pada tahun 2019, rata-rata konsumsi yang dikeluarkan penduduk DKI Jakarta mencapai Rp18.527.000,00 per tahun. Sementara itu, pengeluaran terendah terjadi di Provinsi Papua, rata-rata konsumsi yang dikeluarkan penduduk Papua mencapai Rp7.336.000,00 per tahun.
+                </p>      
+            </div>
+          </div>
+          <div class="card br-left hantu">
+            <div class="card-body">
+              <h5 class="card-title">Komponen Umur Harapan Hidup 2019</h5>
+              <p class="card-text">Pada tahun 2019, umur harapan hidup saat lahir paling tinggi dicapai oleh Provinsi DI Yogyakarta dengan capaian sebesar 74,92 tahun. Sementara itu, umur harapan hidup saat lahir paling rendah berada di Provinsi Sulawesi Barat dengan capaian sebesar 64,82 tahun.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Text 4 -->
+      <div class="row text" id="text3">
+        <div class="container col-sm-6 hantu">
+          <div class="card br-top">
+            <div class="card-body">
+              <h5 class="card-title">Peta Spasial IPM Menurut Provinsi Tahun 2019</h5>
+              <p class="card-text">Dalam konteks regional, Indonesia terbagi menjadi lima gugusan pulau besar, yaitu Pulau Sumatera, Gugusan Pulau Jawa Bali Nusa Tenggara, Pulau Kalimantan, Pulau Sulawesi, dan Gugusan Kepulauan Maluku dan Papua. Seluruh gugusan pulau besar di Indonesia telah terdapat provinsi yang telah mencapai level kategori <span class="text-info">“tinggi”</span>. Kecuali gugusan Kepulauan Maluku dan Papua</p>      
+            </div>
+          </div>
+        </div>
+
+        <div class="container col-sm-6 hantu">
+          <div class="card br-top">
+            <div class="card-body">
+              <p class="card-text">Di Pulau Sumatera, terdapat sembilan provinsi yang sudah mencapai kategori <span class="text-info">“tinggi”</span> yaitu Provinsi Aceh, Sumatera Utara, Sumatera Barat, Riau, Jambi, Bengkulu, Sumatera Selatan, Kep. Bangka Belitung, dan Kepulauan Riau. Sementara Provinsi Lampung masih berada pada kategori <span class="text-info">“sedang”</span></p>      
+            </div>
+          </div>
+        </div>
+
+        <div class="container col-sm-6 hantu">
+          <div class="card br-top">
+            <div class="card-body">
+              <p class="card-text">Di gugusan Pulau Jawa, Bali, dan Nusa Tenggara, seluruh provinsi di Pulau Jawa dan Bali saat ini telah mencapai dengan IPM kategori “tinggi”. Bahkan, Provinsi DKI Jakarta mencapai status <span class="text-info">“sangat tinggi”</span>. Sementara Provinsi Nusa Tenggara Barat dan Nusa Tenggara Timur masih berada pada kategori <span class="text-info">“sedang”</span></p>      
+            </div>
+          </div>
+        </div>
+        <div class="container col-sm-6 hantu">
+          <div class="card br-top">
+            <div class="card-body">
+              <p class="card-text">Di Pulau Kalimantan, hampir semua provinsi telah berstatus <span class="text-info">“tinggi”</span>, kecuali Provinsi Kalimantan Barat yang masih berstatus <span class="text-info">“sedang”</span>.</p>      
+            </div>
+          </div>
+        </div>
+        <div class="container col-sm-6 hantu">
+          <div class="card br-top">
+            <div class="card-body">
+              <p class="card-text">Di gugusan Pulau Sulawesi, saat ini terdapat tiga provinsi yang masuk dalam kategori <span class="text-info">“tinggi”</span> yaitu Provinsi Sulawesi Utara, Sulawesi Selatan, dan Sulawesi Tenggara. </p>      
+            </div>
+          </div>
+        </div>
+        <div class="container col-sm-6 hantu">
+          <div class="card br-top">
+            <div class="card-body">
+              <p class="card-text">Dan di gugusan Pulau Maluku dan Papua, seluruh provinsi masih berstatus <span class="text-info">“sedang”</span>.
+              </p>      
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- end row -->
+
+    
+    
+    </div> <!-- end click-content -->
+        
+
+    <div id="end">
+      <div class="isi container">
+        <h2>Kesimpulan</h2>
+        <p>
+          Secara umum, pembangunan manusia di Indonesia terus mengalami kemajuan dari tahun ke tahun. Angka IPM nasional menunjukkan perkembangan yang positif selama periode tahun 2010-2019. Capaian IPM yang tinggi menandakan bahwa Indonesia telah berstatus tinggi dalam pencapaian pembangunan manusia. Namun, hal itu saja tidaklah cukup karena terdapat indikator lain yang juga digunakan untuk mencatat kemajuan pembangunan manusia. Indikator tersebut adalah Umur Harapan Hidup (UHH), Harapan Lama Sekolah (HLS), Rata-Rata Lama Sekolah (RLS), dan Pendapatan Per Kapita (PPP). </p>
+          <p>Sejalan dengan perkembangan IPM, indikator pembentuk komponen IPM pun juga mengalami peningkatan yang konsisten. Berdasarkan data terbaru tahun 2019, pembangunan manusia di Indonesia telah mencapai level tinggi. Jika dirinci berdasarkan provinsi, DKI Jakarta menempati kategori “sangat tinggi” dengan capaian angka IPM tertinggi secara nasional. Untuk indikator UHH, angka tertinggi dicapai oleh Provinsi DI Yogyakarta sedangkan angka terendah berada di Provinsi Sulawesi Barat. Untuk indikator HLS, angka tertinggi dicapai oleh Provinsi DI Yogyakarta sedangkan angka terendah berada di Provinsi Papua. Untuk indikator RLS dan PPP, angka tertinggi dicapai oleh Provinsi DKI Jakarta sedangkan angka terendah berada di Provinsi Papua. Hal ini dapat menjadi tantangan bagi pemerintah dalam melakukan pemerataan pembangunan baik dari sisi kesehatan, pendidikan, maupun ekonomi.
+        </p>
+        <div class="container col-md-10">
+          <h5 class="mb-0" style="padding: 10px 0;">Bantu kami dengan mengirimkan saran atau komentar anda.</h5>
+
+          <div class="card">
+            <div class="card-body bg-secondary text-white">
+              <form action="komen.php" method="POST">
+                <div class="form-group">
+                  <label for="InputEmail">Email</label>
+                  <input type="email" class="form-control" id="InputEmail" placeholder="Ketikkan email " name="email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Komentar / Saran</label>
+                  <textarea class="form-control" id="Textarea" rows="5" placeholder="Tulis sesuatu.." name="textarea"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info" onsubmit="alert('Pesan anda berhasil terkirim')">Kirim</button>
+              </form>
+              
+            </div>
+          </div>
+          
+          <h4 style="padding-top: 10px;"><span class="text-info">Terima Kasih</span></h4>
+          
+        </div>
+
+        <br>
+
+          
+      </div>
+    </div>
+    </main>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue bg-dark text-white">
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <h5 class="text-uppercase">Tentang kami</h5>
+        <p>IPM-essay merupakan sebuah laman berisi analisis dan teori terkait Indeks Pembangunan Manusia (IPM) di Indonesia dalam bentuk visualisasi data dan esai. <br>
+        <a href="about.html">Lebih lanjut >></a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Tautan</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="index.html">Beranda</a>
+          </li>
+          <li>
+            <a href="essay.html">Esai</a>
+          </li>
+          <li>
+            <a href="about.html">Tentang</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Alamat</h5>
+        Politeknik Statistika STIS, <br>
+        Jl. Otto Iskandardinata No.64C Jakarta 13330
+      </div>
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+  <hr class="my-4" style="border: 1px solid darkgray; opacity: 0.5;">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center">© 2020
+    <a href="index.html"> IPM-essay</a> All Rights Reserved
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <!-- JavaScript -->
+    <script src="js.js"></script>
+    <!-- JS Tableau -->
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
